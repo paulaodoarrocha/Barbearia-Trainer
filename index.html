@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALFA BARBER — Barbearia</title>
 <meta name="description" content="ALFA BARBER — barbearia em Jardim Céu Azul, Valparaíso de Goiás. Técnica, estilo e atendimento de qualidade. Agende seu horário pelo WhatsApp.">
+<link rel="canonical" href="https://barbearia-trainer.vercel.app/">
 <!-- =========================================================
      CONFIGURAÇÃO RÁPIDA PARA O CLIENTE REAL
      - Número do WhatsApp: procure por WHATSAPP_NUMBER em script.js
@@ -31,7 +32,27 @@
     "addressRegion": "GO",
     "postalCode": "72871-067",
     "addressCountry": "BR"
-  }
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ]
 }
 </script>
 
@@ -185,7 +206,7 @@
     <div class="container">
       <h2 class="section-title reveal">Conheça o ambiente</h2>
       <p class="section-subtitle reveal">
-        <code>Corte.mp4</code> 
+        <code></code> 
       </p>
 
       <div class="video-wrapper reveal">
@@ -197,7 +218,7 @@
           <source src="Corte.mp4" type="video/mp4">
           Seu navegador não suporta a reprodução deste vídeo. <a href="Corte.mp4">Baixar vídeo</a>.
         </video>
-        <p class="video-note">Coloque aqui o arquivo de vídeo real do ambiente (recomendado: .mp4, sem áudio de fundo alto, até ~30s).</p>
+        <p class="video-note"></p>
       </div>
     </div>
   </section>
@@ -241,10 +262,11 @@
       <div class="location-grid reveal">
         <div class="location-info">
           <address>
-            Rua67, Quadra115, Lote32<br>
-            Valparaiso De Goias Ceu azul 
+            Rua 67, Quadra 115, Lote 32<br>
+            Jardim Céu Azul<br>
+            Valparaíso de Goiás — GO<br>
+            CEP: 72871-067
           </address>
-          <p class="location-note">Endereço fictício de demonstração. Substitua pelo endereço real da barbearia.</p>
         </div>
         
         <a
