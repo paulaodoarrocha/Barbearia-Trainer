@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALFA BARBER — Barbearia</title>
+<meta name="description" content="ALFA BARBER — técnica, estilo e atendimento em um único lugar. Agende seu horário pelo WhatsApp.">
+
+<!-- =========================================================
+     CONFIGURAÇÃO RÁPIDA PARA O CLIENTE REAL
+     - Número do WhatsApp: procure por WHATSAPP_NUMBER em script.js
+     - Instagram: procure por INSTAGRAM_URL em script.js
+     - Endereço / Google Maps: seção #localizacao neste arquivo
+========================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== CABEÇALHO / NAV ===================== -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a href="#topo" class="brand">ALFA <span>BARBER</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#cortes">Cortes</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#horarios">Horários</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato" class="nav-cta">Agendar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Barbearia</p>
+      <h1 class="hero-title">ALFA <span>BARBER</span></h1>
+      <p class="hero-tagline">Estilo é uma decisão. Nós cuidamos do resto.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-whatsapp" id="heroWhatsapp" target="_blank" rel="noopener">
+          Agendar pelo WhatsApp
+        </a>
+        <a href="#servicos" class="btn btn-outline">Conhecer nossos serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <h2 class="section-title reveal">Serviços</h2>
+      <p class="section-subtitle reveal">Preços claros, sem surpresas.</p>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <h3>Corte Masculino</h3>
+          <p>Corte personalizado de acordo com o formato do rosto e estilo do cliente.</p>
+          <span class="price">R$ 35</span>
+        </article>
+
+        <article class="service-card reveal">
+          <h3>Barba</h3>
+          <p>Modelagem e alinhamento com toalha quente e acabamento na navalha.</p>
+          <span class="price">R$ 25</span>
+        </article>
+
+        <article class="service-card service-card--highlight reveal">
+          <h3>Corte + Barba</h3>
+          <p>O combo completo para quem não abre mão de sair impecável.</p>
+          <span class="price">R$ 50</span>
+        </article>
+
+        <article class="service-card reveal">
+          <h3>Corte Infantil</h3>
+          <p>Atendimento paciente e cuidadoso para os pequenos clientes.</p>
+          <span class="price">R$ 30</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CORTES EM DESTAQUE ===================== -->
+  <section class="section section-alt" id="cortes">
+    <div class="container">
+      <h2 class="section-title reveal">Cortes em destaque</h2>
+      <p class="section-subtitle reveal">
+        Imagens meramente ilustrativas, utilizadas como demonstração de layout. Substitua pelas fotos reais dos trabalhos da barbearia.
+      </p>
+
+      <div class="cuts-grid">
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte degradê em cabelo curto" loading="lazy">
+          <figcaption>Degradê</figcaption>
+        </figure>
+
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte low fade" loading="lazy">
+          <figcaption>Low Fade</figcaption>
+        </figure>
+
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte mid fade" loading="lazy">
+          <figcaption>Mid Fade</figcaption>
+        </figure>
+
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte high fade" loading="lazy">
+          <figcaption>High Fade</figcaption>
+        </figure>
+
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte social" loading="lazy">
+          <figcaption>Corte Social</figcaption>
+        </figure>
+
+        <figure class="cut-card reveal">
+          <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=600&h=700&fit=crop" alt="Demonstração ilustrativa de corte texturizado" loading="lazy">
+          <figcaption>Corte Texturizado</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <h2 class="section-title reveal">Galeria</h2>
+      <p class="section-subtitle reveal">Um pouco do nosso espaço. Fotos de demonstração — substitua pelas imagens reais da barbearia.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=700&h=560&fit=crop" alt="Demonstração ilustrativa do ambiente interno de uma barbearia" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=700&h=560&fit=crop" alt="Demonstração ilustrativa de cadeira de barbeiro" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&h=560&fit=crop" alt="Demonstração ilustrativa de ferramentas de barbearia" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&h=560&fit=crop" alt="Demonstração ilustrativa de corte finalizado" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VÍDEO ===================== -->
+  <section class="section section-alt" id="video">
+    <div class="container">
+      <h2 class="section-title reveal">Conheça o ambiente</h2>
+      <p class="section-subtitle reveal">
+        Espaço reservado para um vídeo curto da barbearia. Substitua o arquivo <code>video/ambiente.mp4</code> e a imagem de capa pelo material real.
+      </p>
+
+      <div class="video-wrapper reveal">
+        <video
+          controls
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&h=675&fit=crop"
+          aria-label="Vídeo demonstrativo do ambiente da ALFA BARBER (placeholder — substituir pelo vídeo real)">
+          <source src="video/ambiente.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução deste vídeo. <a href="video/ambiente.mp4">Baixar vídeo</a>.
+        </video>
+        <p class="video-note">Coloque aqui o arquivo de vídeo real do ambiente (recomendado: .mp4, sem áudio de fundo alto, até ~30s).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section" id="sobre">
+    <div class="container container-narrow">
+      <h2 class="section-title reveal">Sobre a ALFA BARBER</h2>
+      <p class="about-text reveal">
+        A ALFA BARBER nasceu para unir técnica, estilo e atendimento de qualidade em um único lugar.
+        Cada corte é feito com atenção aos detalhes, respeitando o tempo e as preferências de cada cliente.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== HORÁRIOS ===================== -->
+  <section class="section section-alt" id="horarios">
+    <div class="container container-narrow">
+      <h2 class="section-title reveal">Horários de funcionamento</h2>
+      <dl class="hours-list reveal">
+        <div class="hours-row">
+          <dt>Segunda a sexta</dt>
+          <dd>09:00 — 20:00</dd>
+        </div>
+        <div class="hours-row">
+          <dt>Sábado</dt>
+          <dd>09:00 — 18:00</dd>
+        </div>
+        <div class="hours-row">
+          <dt>Domingo</dt>
+          <dd>Fechado</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== LOCALIZAÇÃO ===================== -->
+  <section class="section" id="localizacao">
+    <div class="container">
+      <h2 class="section-title reveal">Localização</h2>
+      <div class="location-grid reveal">
+        <div class="location-info">
+          <address>
+            Rua Exemplo, 100 — Centro<br>
+            Cidade — Estado
+          </address>
+          <p class="location-note">Endereço fictício de demonstração. Substitua pelo endereço real da barbearia.</p>
+        </div>
+        <div class="map-placeholder" role="img" aria-label="Espaço reservado para mapa do Google Maps com a localização da ALFA BARBER">
+          <!-- Substituir por um <iframe> do Google Maps apontando para o endereço real -->
+          <p>Mapa do Google Maps<br><span>(inserir iframe aqui)</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section class="section section-alt section-social">
+    <div class="container container-narrow">
+      <h2 class="section-title reveal">Siga no Instagram</h2>
+      <p class="section-subtitle reveal">Acompanhe cortes, bastidores e novidades da barbearia.</p>
+      <a href="#" class="btn btn-outline" id="instagramBtn" target="_blank" rel="noopener">Ver Instagram</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO / CTA FINAL ===================== -->
+  <section class="section cta-final" id="contato">
+    <div class="container container-narrow">
+      <h2 class="cta-title reveal">Seu próximo corte começa aqui.</h2>
+      <a href="#" class="btn btn-primary btn-large btn-whatsapp" id="ctaWhatsapp" target="_blank" rel="noopener">
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="ano"></span> ALFA BARBER. Site de demonstração.</p>
+    <a href="#topo">Voltar ao topo</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
